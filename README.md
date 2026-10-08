@@ -74,7 +74,7 @@ Exploração aprofundada das principais interfaces e implementações do pacote 
 
 ### 3. Benchmark e Performance de Strings
 - Comparativo prático de desempenho medido em milissegundos (`Duration` e `OffsetDateTime`) executando 1.000.000 de iterações:
-  - **`String`:** Imutável. Cada concatenação (`+=`) gera novas instâncias no heap, resultando em alto custo de tempo e memória ($O(N^2)$).
+  - **`String`:** Imutável. Cada concatenação (`+=`) gera novas instâncias no heap, resultando em alto custo de tempo e memória.
   - **`StringBuilder`:** Mutável e com buffer dinâmico. Ideal para manipulações pesadas em ambientes single-thread (altíssima velocidade).
   - **`StringBuffer`:** Mutável e thread-safe com métodos sincronizados, ideal para ambientes com múltiplas threads concorrentes.
 
